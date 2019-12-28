@@ -1,0 +1,12 @@
+id: com.mattermost.server-nop
+name: Empty mattermost plugin.
+version: 0.1.0
+min_server_version: 5.18.0
+description: |
+  This plugin has empty implementations for all available hooks.
+  It is built for testing purposes only.
+server:
+  executables:
+    linux-amd64: "dist/plugin-linux-amd64"
+    darwin-amd64: "dist/plugin-darwin-amd64"
+    windows-amd64: "dist/plugin-windows-amd64.exe"
