@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.13.5
+
+    working_directory: /go/src/mattermost-plugin-nop
+    steps:
+      - checkout
+      - run: go vet ./...
+      - run: go build plugin.go
