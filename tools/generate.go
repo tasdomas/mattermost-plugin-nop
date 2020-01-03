@@ -1,3 +1,13 @@
+/*
+   The `generate` tool is used to generate a new empty implementation of any
+   specified Interface.
+
+   To run it, provide these parameters:
+   -interface : {package}.{interface} - the interface to generate an empty implementation for.
+   -pkg : name of the package for the generated output.
+   -struct : name of the structure that will implement the interface.
+   -output (optional): file to write the resulting output to.
+*/
 package main
 
 import (

@@ -20,3 +20,5 @@ dist/plugin-windows-amd64.exe: go.mod plugin.go hooks/hooks.go
 	mkdir -p dist
 	GOOS=windows GOARCH=amd64 go build -o $@ plugin.go
 
+generate;
+	go generate ./hooks
